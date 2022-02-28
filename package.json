@@ -5,14 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "generate": "node ./scripts/generateDockerCompose.js",
-    "start": "docker-compose up -d && docker ps",
-    "stop": "docker-compose stop && docker ps",
-    "genStart": "npm run generate && npm run start",
-    "fullRestart": "npm run stop && npm run forceKill || npm run genStart",
-    "forceKill": "docker container kill $(docker ps -a -q) && docker container kill $(docker ps -q)",
-    "dockerSystemPrune": "docker system prune -a",
-    "startRestartServise": "./bash/loop.sh"
+    "service:generate": "node ./scripts/generateDockerCompose.js",
+    "service:start": "docker-compose up -d",
+    "service:forceKill": "docker-compose stop || docker container kill $(docker ps -a -q) || docker container kill $(docker ps -q)",
+    "service:genStart": "npm run service:generate && npm run service:start",
+
+    "fullRestart": "npm run service:forceKill || npm run service:genStart",
+    "startRestartServise": "./bash/loop.sh",
+
+    "dockerSystemPrune": "docker system prune -a"
   },
   "repository": {
     "type": "git",
