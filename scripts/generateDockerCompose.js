@@ -5,6 +5,8 @@ import { generateContainerItem } from './generateContainerItem.js'
 import { fetchTargets } from "../fetch.js";
 
 fetchTargets().then(DDOS_TARGETS => {
+    console.log('--------------------- TARGETS TO ATTACK ---------------------')
+    console.log(DDOS_TARGETS)
     // const DDOS_TARGETS =
     const dockerComposeHeader = '' +
         'version: "3"\n' +
