@@ -8,6 +8,9 @@
     "generate": "node ./scripts/generateDockerCompose.js",
     "start": "docker-compose up -d && docker ps",
     "stop": "docker-compose stop && docker ps",
+    "genStart": "npm run generate && npm run start",
+    "fullRestart": "npm run dockerSystemPrune && npm run genStart",
+
     "forceKill": "docker kill $(docker ps) && docker ps",
     "dockerSystemPrune": "docker system prune -a"
   },

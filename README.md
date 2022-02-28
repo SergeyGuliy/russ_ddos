@@ -1,5 +1,9 @@
 #Russ DDos
 
+### Requirments
+`Node (v17.6.0)`
+`Docker Docker Compoose`
+
 ### Scripts
 `npm run generate` - genetare docker-compose.yml
 
