@@ -16,8 +16,6 @@ DDOS_TARGETS.forEach((target) => {
 
 const readyFile = arrayOfStrings.join('')
 
-console.log(readyFile)
-
 fs.writeFile(
     'docker-compose.yml',
     readyFile,
