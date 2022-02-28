@@ -1,0 +1,23 @@
+{
+  "name": "russ_ddos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "docker-compose up -d && docker ps",
+    "stop": "docker-compose stop && docker ps",
+    "forceKill": "docker kill $(docker ps) && docker ps",
+    "dockerSystemPrune": "docker system prune -a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeyGuliy/russ_ddos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeyGuliy/russ_ddos/issues"
+  },
+  "homepage": "https://github.com/SergeyGuliy/russ_ddos#readme"
+}

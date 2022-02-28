@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  lenta.ru:
+    container_name: lenta.ru
+    image: alpine/bombardier
+    restart: always
+    command: -c 1000 -d 604800s -l lenta.ru
