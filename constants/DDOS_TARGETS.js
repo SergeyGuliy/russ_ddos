@@ -40,6 +40,5 @@ export const DDOS_TARGETS = [
     "rkn.gov.ru",
     "www.gazprom.ru",
     "lukoil.ru",
-
 ]
 

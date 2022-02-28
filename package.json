@@ -10,7 +10,6 @@
     "stop": "docker-compose stop && docker ps",
     "genStart": "npm run generate && npm run start",
     "fullRestart": "npm run dockerSystemPrune && npm run genStart",
-
     "forceKill": "docker kill $(docker ps) && docker ps",
     "dockerSystemPrune": "docker system prune -a"
   },
@@ -23,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/SergeyGuliy/russ_ddos/issues"
   },
-  "homepage": "https://github.com/SergeyGuliy/russ_ddos#readme"
+  "homepage": "https://github.com/SergeyGuliy/russ_ddos#readme",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
 }
