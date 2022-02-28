@@ -9,8 +9,8 @@
     "start": "docker-compose up -d && docker ps",
     "stop": "docker-compose stop && docker ps",
     "genStart": "npm run generate && npm run start",
-    "fullRestart": "npm run stop && npm run dockerSystemPrune && npm run genStart",
-    "forceKill": "docker kill $(docker ps) && docker ps",
+    "fullRestart": "npm run stop && npm run forceKill || npm run genStart",
+    "forceKill": "docker container kill $(docker ps -q) && docker ps",
     "dockerSystemPrune": "docker system prune -a"
   },
   "repository": {

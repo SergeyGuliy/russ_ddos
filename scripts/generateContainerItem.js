@@ -12,11 +12,11 @@ export function generateContainerItem (item) {
         connections = item.connections || DDOS_DEFAULT_CONNECTIONS;
     }
 
-    const UID = `UID_${(+Math.random() * 100000000000000).toFixed()}`
+    const UID = `UID_${(+Math.random() * 10000).toFixed()}`
 
     return '\n' +
         `  ${UID}:\n` +
-        `    container_name: ${link}\n` +
+        `    container_name: ${link}_${UID}\n` +
         `    image: alpine/bombardier\n` +
         `    restart: always\n` +
         `    command: -c ${connections} -d ${duration} -l ${link}` +
