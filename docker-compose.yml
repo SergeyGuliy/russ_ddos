@@ -5,4 +5,10 @@ services:
     container_name: lenta.ru
     image: alpine/bombardier
     restart: always
-    command: -c 1000 -d 604800s -l lenta.ru
+    command: -c 500 -d 604800s -l lenta.ru
+
+  google.com:
+    container_name: google.com
+    image: alpine/bombardier
+    restart: always
+    command: -c 200 -d 604800s -l google.com

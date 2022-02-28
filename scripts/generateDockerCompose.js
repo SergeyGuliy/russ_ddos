@@ -1,4 +1,7 @@
-import { DDOS_TARGETS } from '../constants/DDOS_TARGETS'
+import fs from 'fs';
+
+import { DDOS_TARGETS } from '../constants/DDOS_TARGETS.js'
+import { generateContainerItem } from './generateContainerItem.js'
 
 const dockerComposeHeader = '' +
     'version: "3"\n' +
@@ -7,9 +10,18 @@ const dockerComposeHeader = '' +
 
 let arrayOfStrings = [dockerComposeHeader]
 
-
 DDOS_TARGETS.forEach((target) => {
-    console.log(target)
+    arrayOfStrings.push(generateContainerItem(target))
 })
 
-console.log(dockerComposeHeader)
+const readyFile = arrayOfStrings.join('')
+
+console.log(readyFile)
+
+fs.writeFile(
+    'docker-compose.yml',
+    readyFile,
+    (e) => {
+        if (e) { throw e }
+    }
+)
