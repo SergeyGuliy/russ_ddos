@@ -11,7 +11,8 @@
     "genStart": "npm run generate && npm run start",
     "fullRestart": "npm run stop && npm run forceKill || npm run genStart",
     "forceKill": "docker container kill $(docker ps -a -q) && docker container kill $(docker ps -q)",
-    "dockerSystemPrune": "docker system prune -a"
+    "dockerSystemPrune": "docker system prune -a",
+    "startRestartServise": "./bash/loop.sh"
   },
   "repository": {
     "type": "git",
