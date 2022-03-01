@@ -1,4 +1,4 @@
-import fs from 'fs';
+const fs = require('fs');
 
 import { RESERVE_DDOS_TARGETS } from '../constants/DDOS_TARGETS.js'
 import { generateContainerItem } from './generateContainerItem.js'
