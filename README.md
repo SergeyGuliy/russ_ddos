@@ -5,7 +5,7 @@ https://ddosmonitor.herokuapp.com/
 ### Requirments
 `Node (v17.6.0)`
 `Docker Docker Compoose`
-`avaliability to run bash scripts`
+`Linux, Mac or WSL 2 (avaliability to run bash scripts)` 
 
 ### Scripts
 `npm run service:generate` - generate docker-compose.yml. Based on request which will return still working target sites.
