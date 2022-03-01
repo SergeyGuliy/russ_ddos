@@ -25,6 +25,8 @@ https://ddosmonitor.herokuapp.com/
 
 
 ### Script for setup in Digital Ocean (Docker container)
+![](../../../ShareX/Screenshots/2022-03/chrome_rt7lav5XKj.png)
+min 4Gb ram
 `
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash &&
 source ~/.bashrc &&
