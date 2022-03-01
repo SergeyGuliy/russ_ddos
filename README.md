@@ -22,3 +22,7 @@ https://ddosmonitor.herokuapp.com/
 `./constants/DDOS_TARGETS.js` file with list of targets
 
 `./constants/DEFAULT_VALUES.js` ddos basic values
+
+
+### Script for setup in Digital Ocean (Docker container)
+`apt install nodejs && apt install npm && git clone https://github.com/SergeyGuliy/russ_ddos.git && cd russ_ddos/ && npm i && npm run startRestartServise`
