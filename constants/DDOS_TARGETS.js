@@ -8,7 +8,7 @@
 //     connections: 500
 // },
 
-export const DDOS_TARGETS = [
+export const RESERVE_DDOS_TARGETS = [
     "sputnik.by",
     "magnit.ru",
     "www.nornickel.com",
