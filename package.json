@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "service:generate": "node --experimental-modules ./scripts/generateDockerCompose.js",
-    "service:start": "docker-compose up -d",
-    "service:forceKill": "docker-compose stop || docker container kill $(docker ps -a -q) || docker container kill $(docker ps -q)",
+    "service:start": "docker-compose up -d && clear && docker ps",
+    "service:forceKill": "docker container kill $(docker ps -a -q) || docker container kill $(docker ps -q)",
     "service:genStart": "npm run service:generate && npm run service:start",
 
     "fullRestart": "npm run service:forceKill || npm run service:genStart",
