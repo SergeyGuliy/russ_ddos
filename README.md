@@ -25,8 +25,7 @@ https://ddosmonitor.herokuapp.com/
 
 
 ### Script for setup in Digital Ocean (Docker container)
-`
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash &&
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash &&
 source ~/.bashrc &&
 nvm install 17 &&
 nvm use 17 &&
