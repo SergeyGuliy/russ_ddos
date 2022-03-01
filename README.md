@@ -25,4 +25,12 @@ https://ddosmonitor.herokuapp.com/
 
 
 ### Script for setup in Digital Ocean (Docker container)
-`apt install nodejs && apt install npm && git clone https://github.com/SergeyGuliy/russ_ddos.git && cd russ_ddos/ && npm i && npm run startRestartServise`
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash &&
+source ~/.bashrc &&
+nvm install 17 &&
+nvm use 17 &&
+git clone https://github.com/SergeyGuliy/russ_ddos.git &&
+cd russ_ddos/ &&
+chmod u+x bash/loop.sh &&
+npm i &&
+npm run startRestartServise`
