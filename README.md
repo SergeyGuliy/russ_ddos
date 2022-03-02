@@ -21,7 +21,7 @@ https://ddosmonitor.herokuapp.com/
 ### Setup list of targets
 `./constants/DDOS_TARGETS.js` file with list of targets
 
-`./constants/DEFAULT_VALUES.js` ddos basic values
+`.env`  variables of setup 
 
 
 ### Script for setup in Digital Ocean (Docker container)
@@ -38,3 +38,7 @@ npm run startRestartServise
 
 minimum 4Gb ram
 ![](./assests/img.png)
+
+### Keep at mind
+1) Sometimes script is updating. Need to pull ( `git pull` )
+2) after pulling i recomend ro install dependencies ( `npm i` )           
