@@ -1,4 +1,5 @@
 import fs from 'fs';
+import 'dotenv/config' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 
 import { RESERVE_DDOS_TARGETS } from '../constants/DDOS_TARGETS.js'
 import { generateContainerItem } from './generateContainerItem.js'

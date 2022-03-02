@@ -9,10 +9,8 @@
     "service:start": "docker-compose up -d && clear && docker ps",
     "service:forceKill": "docker container kill $(docker ps -a -q) || docker container kill $(docker ps -q)",
     "service:genStart": "npm run service:generate && npm run service:start",
-
     "fullRestart": "npm run service:forceKill || npm run service:genStart",
     "startRestartServise": "./bash/loop.sh",
-
     "dockerSystemPrune": "docker system prune -a"
   },
   "repository": {
@@ -26,6 +24,7 @@
   },
   "homepage": "https://github.com/SergeyGuliy/russ_ddos#readme",
   "dependencies": {
-    "axios": "^0.26.0"
+    "axios": "^0.26.0",
+    "dotenv": "^16.0.0"
   }
 }

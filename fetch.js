@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export function fetchTargets() {
-    return axios.get('https://ddosmonitor.herokuapp.com/global/api/sites')
+    return axios.get(process.env.API_TARGETS)
         .then((resp) => {
             const notSameLinks = []
 

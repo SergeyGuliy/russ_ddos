@@ -1,2 +1,0 @@
-export const DDOS_DEFAULT_DURATION = '604800s'
-export const DDOS_DEFAULT_CONNECTIONS = '1000'
